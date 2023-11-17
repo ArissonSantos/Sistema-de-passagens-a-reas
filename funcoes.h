@@ -68,8 +68,8 @@ void comprarPassagensGol() {
     int escolhaGol;
     do {
     	system("cls");
-        printf("Escolha a opção de voo pela Gol:\n");
-        printf("1. Voo interestadual entre Brasília e São Paulo por R$1250,00\n");
+        printf("Escolha a opÃ§Ã£o de voo pela Gol:\n");
+        printf("1. Voo interestadual entre BrasÃ­lia e SÃ£o Paulo por R$1250,00\n");
         printf("2. Voo internacional por R$8750,00\n");
         printf("3. Voltar\n");
         printf("Escolha: ");
@@ -80,7 +80,7 @@ void comprarPassagensGol() {
 
         switch (escolhaGol) {
             case 1:
-                printf("Você escolheu um voo interestadual pela Gol entre Brasília e São Paulo por R$1250,00.\n");
+                printf("VocÃª escolheu um voo interestadual pela Gol entre BrasÃ­lia e SÃ£o Paulo por R$1250,00.\n");
                 float distancia = 1000; 
                 float preco = distancia * 1.25;
 
@@ -93,20 +93,20 @@ void comprarPassagensGol() {
                 scanf("%s", cliente.email);
                 printf("Telefone: ");
                 scanf("%s", cliente.telefone);
-                printf("Endereço: ");
+                printf("EndereÃ§o: ");
                 scanf("%s", cliente.endereco);
                 printf("UF: ");
                 scanf("%s", cliente.uf);
                 
                 salvarDadosCompra(empresa, "Voo Interestadual", cliente, preco);
                 
-                printf("\nVocê escolheu um voo interestadual entre Brasília e São Paulo por R$1250,00.\n");
+                printf("\nVocÃª escolheu um voo interestadual entre BrasÃ­lia e SÃ£o Paulo por R$1250,00.\n");
                 printf("Dados do passageiro:\n");
                 printf("Nome: %s\n", cliente.nome);
                 printf("Idade: %d\n", cliente.idade);
                 printf("E-mail: %s\n", cliente.email);
                 printf("Telefone: %s\n", cliente.telefone);
-                printf("Endereço: %s\n", cliente.endereco);
+                printf("EndereÃ§o: %s\n", cliente.endereco);
                 printf("UF: %s\n", cliente.uf);
                 printf("Data da compra: %d/%d/%d\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
                 getch();
@@ -114,7 +114,7 @@ void comprarPassagensGol() {
                 
                 break;
             case 2:
-                printf("Você escolheu um voo internacional entre São Paulo e Miami pela Gol por R$8750,00.\n");
+                printf("VocÃª escolheu um voo internacional entre SÃ£o Paulo e Miami pela Gol por R$8750,00.\n");
                 float distancia_int = 7000; 
                 float preco_int = distancia_int * 1.25;
                 
@@ -127,7 +127,7 @@ void comprarPassagensGol() {
                 scanf("%s", cliente.email);
                 printf("Telefone: ");
                 scanf("%s", cliente.telefone);
-                printf("Endereço: ");
+                printf("EndereÃ§o: ");
                 scanf("%s", cliente.endereco);
                 printf("UF: ");
                 scanf("%s", cliente.uf);
@@ -135,13 +135,13 @@ void comprarPassagensGol() {
 
                 salvarDadosCompra(empresa, "Voo Internacional", cliente, preco_int);
                 
-                printf("\nVocê escolheu um voo internacional entre São Paulo e Miami pela Gol por R$8750,00.\n");
+                printf("\nVocÃª escolheu um voo internacional entre SÃ£o Paulo e Miami pela Gol por R$8750,00.\n");
                 printf("Dados do passageiro:\n");
                 printf("Nome: %s\n", cliente.nome);
                 printf("Idade: %d\n", cliente.idade);
                 printf("E-mail: %s\n", cliente.email);
                 printf("Telefone: %s\n", cliente.telefone);
-                printf("Endereço: %s\n", cliente.endereco);
+                printf("EndereÃ§o: %s\n", cliente.endereco);
                 printf("UF: %s\n", cliente.uf);
                 printf("Data da compra: %d/%d/%d\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
                 getch();
@@ -158,19 +158,19 @@ void comprarPassagensLatam() {
     int escolhaLatam;
     do {
         system("cls");
-        printf("Escolha a opção de voo pela LATAM:\n");
+        printf("Escolha a opÃ§Ã£o de voo pela LATAM:\n");
         printf("1. Voo intermunicipal entre Belo Horizonte e Uberaba por R$563,00\n");
-        printf("2. Voo internacional entre São Paulo e Dubai por R$13750,00\n");
+        printf("2. Voo internacional entre SÃ£o Paulo e Dubai por R$13750,00\n");
         printf("3. Voltar\n");
         printf("Escolha: ");
         scanf("%d", &escolhaLatam);
 
         struct Cliente cliente;
-        struct Empresa empresa = {"Latam", "www.latamairlines.com.br", "informacoes.agencias@latam.com", "0300 570 5700", " São Paulo, São Paulo", "SP"};
+        struct Empresa empresa = {"Latam", "www.latamairlines.com.br", "informacoes.agencias@latam.com", "0300 570 5700", " SÃ£o Paulo, SÃ£o Paulo", "SP"};
 
         switch (escolhaLatam) {
             case 1:
-                printf("Você escolheu um voo intermunicipal entre Belo Horizonte e Uberaba pela LATAM por R$563,00.\n");
+                printf("VocÃª escolheu um voo intermunicipal entre Belo Horizonte e Uberaba pela LATAM por R$563,00.\n");
                 float distancia = 450; 
                 float preco = distancia * 1.25;
 
@@ -183,20 +183,20 @@ void comprarPassagensLatam() {
                 scanf("%s", cliente.email);
                 printf("Telefone: ");
                 scanf("%s", cliente.telefone);
-                printf("Endereço: ");
+                printf("EndereÃ§o: ");
                 scanf("%s", cliente.endereco);
                 printf("UF: ");
                 scanf("%s", cliente.uf);
                 
                 salvarDadosCompra(empresa, "Voo Intermunicipal", cliente, preco);
                 
-                printf("\nVocê escolheu um voo intermunicipal entre Belo Horizonte e Uberaba pela LATAM por R$563,00.\n");
+                printf("\nVocÃª escolheu um voo intermunicipal entre Belo Horizonte e Uberaba pela LATAM por R$563,00.\n");
                 printf("Dados do passageiro:\n");
                 printf("Nome: %s\n", cliente.nome);
                 printf("Idade: %d\n", cliente.idade);
                 printf("E-mail: %s\n", cliente.email);
                 printf("Telefone: %s\n", cliente.telefone);
-                printf("Endereço: %s\n", cliente.endereco);
+                printf("EndereÃ§o: %s\n", cliente.endereco);
                 printf("UF: %s\n", cliente.uf);
                 printf("Data da compra: %d/%d/%d\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
                 getch();
@@ -204,7 +204,7 @@ void comprarPassagensLatam() {
                 
                 break;
             case 2:
-                printf("Você escolheu um voo internacional entre São Paulo e Dubai pela LATAM por R$13750,00.\n");
+                printf("VocÃª escolheu um voo internacional entre SÃ£o Paulo e Dubai pela LATAM por R$13750,00.\n");
                 float distancia_int = 7000; 
                 float preco_int = distancia_int * 1.25;
                 
@@ -217,20 +217,20 @@ void comprarPassagensLatam() {
                 scanf("%s", cliente.email);
                 printf("Telefone: ");
                 scanf("%s", cliente.telefone);
-                printf("Endereço: ");
+                printf("EndereÃ§o: ");
                 scanf("%s", cliente.endereco);
                 printf("UF: ");
                 scanf("%s", cliente.uf);
 				
                 salvarDadosCompra(empresa, "Voo Internacional", cliente, preco_int);
                 
-                printf("Você escolheu um voo internacional entre São Paulo e Dubai pela LATAM por R$13750,00.\n");
+                printf("VocÃª escolheu um voo internacional entre SÃ£o Paulo e Dubai pela LATAM por R$13750,00.\n");
                 printf("Dados do passageiro:\n");
                 printf("Nome: %s\n", cliente.nome);
                 printf("Idade: %d\n", cliente.idade);
                 printf("E-mail: %s\n", cliente.email);
                 printf("Telefone: %s\n", cliente.telefone);
-                printf("Endereço: %s\n", cliente.endereco);
+                printf("EndereÃ§o: %s\n", cliente.endereco);
                 printf("UF: %s\n", cliente.uf);
                 printf("Data da compra: %d/%d/%d\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
                 getch();
@@ -248,19 +248,19 @@ void comprarPassagensAzul() {
     int escolhaAzul;
     do {
         system("cls");
-        printf("Escolha a opção de voo pela Azul:\n");
-        printf("1. Voo intermunicipal entre Porto Alegre e Florianópolis por R$500,00\n");
-        printf("2. Voo interestadual entre Rio de Janeiro e São Paulo por R$525,00\n");
+        printf("Escolha a opÃ§Ã£o de voo pela Azul:\n");
+        printf("1. Voo intermunicipal entre Porto Alegre e FlorianÃ³polis por R$500,00\n");
+        printf("2. Voo interestadual entre Rio de Janeiro e SÃ£o Paulo por R$525,00\n");
         printf("3. Voltar\n");
         printf("Escolha: ");
         scanf("%d", &escolhaAzul);
 
         struct Cliente cliente;
-        struct Empresa empresa = {"Azul", "www.voeazul.com.br", "site@voeazul.com", "11 4003-1118", " São Paulo, São Paulo", "SP"};
+        struct Empresa empresa = {"Azul", "www.voeazul.com.br", "site@voeazul.com", "11 4003-1118", " SÃ£o Paulo, SÃ£o Paulo", "SP"};
 
         switch (escolhaAzul) {
             case 1:
-                printf("Você escolheu um voo intermunicipal pela Azul entre Porto Alegre e Florianópolis por R$500,00.\n");
+                printf("VocÃª escolheu um voo intermunicipal pela Azul entre Porto Alegre e FlorianÃ³polis por R$500,00.\n");
                 float distancia = 400; 
                 float preco = distancia * 1.25;
 
@@ -273,20 +273,20 @@ void comprarPassagensAzul() {
                 scanf("%s", cliente.email);
                 printf("Telefone: ");
                 scanf("%s", cliente.telefone);
-                printf("Endereço: ");
+                printf("EndereÃ§o: ");
                 scanf("%s", cliente.endereco);
                 printf("UF: ");
                 scanf("%s", cliente.uf);
                 
                 salvarDadosCompra(empresa, "Voo Intermunicipal", cliente, preco);
                 
-                printf("Você escolheu um voo intermunicipal pela Azul entre Porto Alegre e Florianópolis por R$500,00.\n");
+                printf("VocÃª escolheu um voo intermunicipal pela Azul entre Porto Alegre e FlorianÃ³polis por R$500,00.\n");
                 printf("Dados do passageiro:\n");
                 printf("Nome: %s\n", cliente.nome);
                 printf("Idade: %d\n", cliente.idade);
                 printf("E-mail: %s\n", cliente.email);
                 printf("Telefone: %s\n", cliente.telefone);
-                printf("Endereço: %s\n", cliente.endereco);
+                printf("EndereÃ§o: %s\n", cliente.endereco);
                 printf("UF: %s\n", cliente.uf);
                 printf("Data da compra: %d/%d/%d\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
                 getch();
@@ -294,7 +294,7 @@ void comprarPassagensAzul() {
                 
                 break;
             case 2:
-                printf("Você escolheu um voo interestadual pela Azul entre Rio de Janeiro e São Paulo por R$525,00.\n");
+                printf("VocÃª escolheu um voo interestadual pela Azul entre Rio de Janeiro e SÃ£o Paulo por R$525,00.\n");
                 float distancia_int = 420; 
                 float preco_int = distancia_int * 1.25;
                 
@@ -307,20 +307,20 @@ void comprarPassagensAzul() {
                 scanf("%s", cliente.email);
                 printf("Telefone: ");
                 scanf("%s", cliente.telefone);
-                printf("Endereço: ");
+                printf("EndereÃ§o: ");
                 scanf("%s", cliente.endereco);
                 printf("UF: ");
                 scanf("%s", cliente.uf);
 				
                 salvarDadosCompra(empresa, "Voo Interestadual", cliente, preco_int);
                 
-                printf("Você escolheu um voo interestadual pela Azul entre Rio de Janeiro e São Paulo por R$525,00.\n");
+                printf("VocÃª escolheu um voo interestadual pela Azul entre Rio de Janeiro e SÃ£o Paulo por R$525,00.\n");
                 printf("Dados do passageiro:\n");
                 printf("Nome: %s\n", cliente.nome);
                 printf("Idade: %d\n", cliente.idade);
                 printf("E-mail: %s\n", cliente.email);
                 printf("Telefone: %s\n", cliente.telefone);
-                printf("Endereço: %s\n", cliente.endereco);
+                printf("EndereÃ§o: %s\n", cliente.endereco);
                 printf("UF: %s\n", cliente.uf);
                 printf("Data da compra: %d/%d/%d\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
                 getch();
@@ -359,7 +359,7 @@ void listarTiposServicosOrdemCrescente() {
 
     bubbleSortServicos(servicos, tamanho);
 
-    printf("\nTipos de Serviços em Ordem Crescente de Preço:\n\n");
+    printf("\nTipos de ServiÃ§os em Ordem Crescente de PreÃ§o:\n\n");
 
     for (i = 0; i < tamanho; i++) {
         printf("%s de %s para %s: R$ %.2f\n", servicos[i].companhia, servicos[i].origem, servicos[i].destino, servicos[i].preco);
@@ -401,20 +401,20 @@ void listarPrestadoresServicos() {
         {"GOL", "www.voegol.com.br", "contato@voegol.com.br", "0800 704 0465",
          "Fortaleza", "CE"},
         {"LATAM", "www.latamairlines.com.br", "informacoes.agencias@latam.com", "0300 570 5700",
-         "São Paulo, São Paulo", "SP"},
+         "SÃ£o Paulo, SÃ£o Paulo", "SP"},
         {"AZUL", "www.voeazul.com.br", "site@voeazul.com", "11 4003-1118",
-         "São Paulo, São Paulo", "SP"}
+         "SÃ£o Paulo, SÃ£o Paulo", "SP"}
     };
 
     bubbleSortEmpresas(empresas, 3);
 
-    printf("Prestadores de Serviços em Ordem Crescente:\n");
+    printf("Prestadores de ServiÃ§os em Ordem Crescente:\n");
     for (i = 0; i < 3; i++) {
         printf("\n%d. Nome: %s\n", i + 1, empresas[i].nome);
-        printf("   Endereço Eletrônico: %s\n", empresas[i].enderecoEletronico);
+        printf("   EndereÃ§o EletrÃ´nico: %s\n", empresas[i].enderecoEletronico);
         printf("   E-mail: %s\n", empresas[i].email);
         printf("   Telefone: %s\n", empresas[i].telefone);
-        printf("   Endereço: %s\n", empresas[i].endereco);
+        printf("   EndereÃ§o: %s\n", empresas[i].endereco);
         printf("   UF: %s\n", empresas[i].uf);
     }
 }
@@ -522,7 +522,7 @@ void listarClientesOrdemCrescente() {
         }
     qsort(clientes, numClientes, sizeof(struct Cliente), compararClientes);
 
-	printf("\nNomes dos clientes em ordem alfabética crescente:\n");
+	printf("\nNomes dos clientes em ordem alfabÃ©tica crescente:\n");
     for ( i = 0; i < numClientes; i++) {
         printf("%s\n", clientes[i].nome);
 	}
@@ -601,15 +601,13 @@ void bubbleSort(struct Servico servicos[], int tamanho) {
 void estadoServicoMaisCaro() {
 
     int tamanho = sizeof(servicos) / sizeof(servicos[0]);
-
+	int i = 0;
    
     bubbleSort(servicos, tamanho);
 
-    printf("\nEstados onde estão registrados os serviços mais caros:\n");
+    printf("\nEstado onde estÃ¡ registrado o serviÃ§o mais caro:\n");
 
-	int i;
-    for (i = 0; i < tamanho; i++) {
         printf("%s de %s para %s: R$ %.2f\n", servicos[i].companhia, servicos[i].origem, servicos[i].destino, servicos[i].preco);
-    }
+
 
 }
