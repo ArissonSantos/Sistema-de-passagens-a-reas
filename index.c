@@ -14,7 +14,7 @@ int main() {
     																													
     do {
         system("cls");
-        printf("Bem-vindo! Escolha uma opção:\n");
+        printf("Bem-vindo! Escolha uma opÃ§Ã£o:\n");
         printf("1. Cliente\n");
         printf("2. Administrador\n");
         printf("3. Sair\n");
@@ -24,9 +24,9 @@ int main() {
         switch (escolha) {
             case 1:
                 system("cls");
-                printf("Você entrou como cliente.\n");
+                printf("VocÃª entrou como cliente.\n");
                 do {
-                    printf("Escolha a companhia aérea para comprar suas passagens:\n");
+                    printf("Escolha a companhia aÃ©rea para comprar suas passagens:\n");
                     printf("1. Gol\n");
                     printf("2. LATAM\n");
                     printf("3. Azul\n");
@@ -52,7 +52,7 @@ int main() {
                             break;
 
                         default:
-                            printf("Opção inválida para companhia aérea.\n");
+                            printf("OpÃ§Ã£o invÃ¡lida para companhia aÃ©rea.\n");
                     }
                 } while (companhia != 4);
                 break;
@@ -61,14 +61,14 @@ int main() {
 
                 do {
                 	system("cls");
-                	printf("Você entrou como administrador.\n");
-                    printf("\nOpções do administrador:\n");
-                    printf("1. Listar todos os tipos de serviços em ordem crescente de valor\n");
-                    printf("2. Listar todos os prestadores de serviços\n");
-                    printf("3. Listar os prestadores de serviço de um determinado tipo\n");
+                	printf("VocÃª entrou como administrador.\n");
+                    printf("\nOpÃ§Ãµes do administrador:\n");
+                    printf("1. Listar todos os tipos de serviÃ§os em ordem crescente de valor\n");
+                    printf("2. Listar todos os prestadores de serviÃ§os\n");
+                    printf("3. Listar os prestadores de serviÃ§o de um determinado tipo\n");
                     printf("4. Listar todas os clientes em ordem crescente\n");
                     printf("5. Listar os clientes de um determinado estado\n");
-                    printf("6. Apresentar o(s) estado(s) onde está registrado o serviço mais caro\n");
+                    printf("6. Apresentar o estado onde estÃ¡ registrado o serviÃ§o mais caro\n");
                     printf("7. Retornar ao menu anterior\n");
                     printf("Escolha: ");
                     scanf("%d", &escolhaAdmin);
@@ -121,7 +121,7 @@ int main() {
 
                         default:
                         	system("cls");
-                            printf("Opção inválida para administrador.\n");
+                            printf("OpÃ§Ã£o invÃ¡lida para administrador.\n");
                             getch();
                     }
                 } while (escolhaAdmin != 7);
@@ -132,10 +132,9 @@ int main() {
                 break;
 
             default:
-                printf("Escolha inválida. Por favor, escolha 1, 2 ou 3.\n");
+                printf("Escolha invÃ¡lida. Por favor, escolha 1, 2 ou 3.\n");
         }
     } while (escolha != 3);
 
     return 0;
 }
-
